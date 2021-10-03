@@ -4,10 +4,8 @@
 int main(){
     int number;
     srand(time(0));
-    for (int i = 0; i < 1; i++)
-    {
-        printf("%d",rand());
-    }
-    
+    number=rand()%101+1;
+    printf("%d",number);
+   
     return 0;
 }
