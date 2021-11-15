@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
    int i, num, j = 0;
@@ -19,4 +19,5 @@ int main()
    {
       printf("Not a prime number");
    }
+   return 0;
 }
