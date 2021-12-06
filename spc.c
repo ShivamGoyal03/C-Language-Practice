@@ -1,16 +1,16 @@
-// Snake Water Gun Game
+// Stone Paper Scissor Game
 
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
 
-int snakeWaterGun(char you, char comp)
+int StonePaperScissor(char you, char comp)
 {
     if (you == comp)
     {
         return 0;
     }
-    else if ((you == 's' && comp == 'w') || (you == 'w' && comp == 'g') || (you == 'g' && comp == 's'))
+    else if ((you == 's' && comp == 'c') || (you == 'c' && comp == 'p') || (you == 'p' && comp == 's'))
     {
         return 1;
     }
@@ -30,16 +30,16 @@ int main()
     }
     else if (number >= 33 && number < 66)
     {
-        comp = 'w';
+        comp = 'p';
     }
     else
     {
-        comp = 'g';
+        comp = 'c';
     }
 
-    printf("Choose 's' for Snake, 'w' for Water and 'g' for Gun : ");
+    printf("Choose 's' for Stone, 'p' for Paper and 'c' for Scissor : ");
     scanf("%c", &you);
-    int result = snakeWaterGun(you, comp);
+    int result = StonePaperScissor(you, comp);
     if (result == 0)
     {
         printf("Game Drawn\n");
